@@ -1,4 +1,4 @@
-
+// 12
 var 이미지좌표 = 0;
 var 가위바위보 = { //딕셔너리 자료구조
     바위: '0',
@@ -42,7 +42,7 @@ document.querySelectorAll(".btn").forEach(function(btn){
         },1000);
         var 나의선택 = this.textContent;
         if(점수표[나의선택] - 점수표[컴퓨터의선택(이미지좌료)] === 0 ){
-        
+
         }
         if(나의선택 === '가위'){
             if(컴퓨터의선택(이미지좌표) === '가위'){
