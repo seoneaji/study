@@ -10,22 +10,29 @@
     <h1>제로초 강의</h1>
     <h2 class="title">초급</h2>
     <section>
+        <h3 class="sub-title">변수</h3>
+        <div class="box">
+            <p class="desc">변할 수 있는 값</p>
+             <pre class="ex">
+var 변수명 = 값
+             </pre>
+        </div>
         <h3 class="sub-title">Number, String, boolean (true, false) , null , undefined</h3>
         <div class="box">
-            <h4 class="fn">Number</h4>
+            <h4 class="box-tit">Number</h4>
             <p class="desc">숫자</p>
-            <h4 class="fn">String</h4>
+            <h4 class="box-tit">String</h4>
             <p class="desc">문자</p>
-            <h4 class="fn">boolean</h4>
+            <h4 class="box-tit">boolean</h4>
             <p class="desc">참 거짓 (true, false)</p>
-            <h4 class="fn">undefined</h4>
+            <h4 class="box-tit">undefined</h4>
             <p class="desc">빈값, var 빈값 =; 변수가 기억하고 있는 값을 바꿀 수 있습니다. var 빈값 = undefined; 쓰지말것 그럴때는 null을 쓰자 </p>
-            <h4 class="fn">null</h4>
+            <h4 class="box-tit">null</h4>
             <p class="desc">값을 넣어줘야만 나옴 </p>
         </div>
         <h3 class="sub-title">틱택토 구현</h3>
         <div class="box">
-            <h4 class="fn">forEach</h4>
+            <h4 class="box-tit">forEach</h4>
             <p class="desc">배열의 반복문</p>
             <pre class="ex">
 [1,2,3,4,5].forEach(function(요소){
@@ -35,17 +42,17 @@
         </div>
         <h3 class="sub-title">가위바위보</h3>
         <div class="box">
-            <h4 class="fn">Object.entries(객체);</h4>
+            <h4 class="box-tit">Object.entries(객체);</h4>
             <p class="desc">객체를 배열로 바꿀 수 있다.</p>
-            <h4 class="fn">배열.find</h4>
+            <h4 class="box-tit">배열.find</h4>
             <p class="desc">반복문이지만 원하는 것을 찾으면 (return이 true) 멈춥니다.</p>
-            <h4 class="fn">배열.findIndex</h4>
+            <h4 class="box-tit">배열.findIndex</h4>
             <p class="desc">1차원 배열일때는 indexOF, 2차원 배열일때는 findIndex를 쓴다.</p>
-            <h4 class="fn">리펙토링</h4>
+            <h4 class="box-tit">리펙토링</h4>
             <p class="desc">코딩을 더 효율적 더 보기 좋게 바꾸는 작업들</p>
-            <h4 class="fn">clearInterval</h4>
+            <h4 class="box-tit">clearInterval</h4>
             <p class="desc">변수에 담은 setInterval을 멈출 수 있음</p>
-            <h4 class="fn">배열.includes();</h4>
+            <h4 class="box-tit">배열.includes();</h4>
             <p class="desc">||(또는)의 관계를 줄일 수 있다</p>
             <pre class="ex">
 if(점수표[나의선택] - 점수표[컴퓨터의선택(이미지좌표)] === 0){
@@ -57,6 +64,16 @@ if(점수표[나의선택] - 점수표[컴퓨터의선택(이미지좌표)] === 
     console.log('짐')
 }
             </pre>
+        </div>
+        <h3 class="sub-title">스코프와 클로저</h3>
+        <div class="box">
+            <h4 class="box-tit">스코프(범위)</h4>
+            <p class="desc">어떠한 변수들에 접근할 수 있는지를 정의</p>
+            <h5 class="box-sub-tit">종류</h5>
+            <ul class="desc-list">
+                <li><strong>전역스코프</strong><br>변수가 함수 바깥이나 중괄호({})바깥에 선언되었다면, 전역 스코프에 정의됨</li>
+                <li></li>
+            </ul>
         </div>
         <h3 class="sub-title">지뢰찾기</h3>
         <div class="box">
