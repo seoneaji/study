@@ -1,0 +1,48 @@
+@charset "UTF-8";
+html{overflow-y:scroll; overflow-x:auto;}
+body,p,h1,h2,h3,h4,h5,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select{margin:0;padding:0}
+body,input,textarea,select,button,table,pre{font-family:'Malgun Gothic','맑은 고딕', 'Dotum', '돋움', 'Apple SD Gothic Neo', sans-serif;font-size:14px;line-height:1.6;font-weight:normal;letter-spacing:-0.04em;-webkit-text-size-adjust:none;-webkit-font-smoothing:antialiased}
+body{color:#555;}
+img,fieldset,button{border:0 none;}
+ul,ol,li{list-style:none}
+img{max-width:100%;	image-rendering:-webkit-optimize-contrast; image-rendering:optimizeQuality;}
+img,input,select,button{font-size:14px}
+input{background:#fff;-webkit-appearance: none;}
+em,address{font-style:normal}
+a{color:#3c8dbc;text-decoration:none;}
+button{margin:0;padding:0;background:none}
+h1,h2,h3,h4,h5,h6,b{color:#000}
+table{border-collapse:collapse;border-spacing:0;}
+td,th{border-collapse:collapse;border-spacing:0;word-wrap:break-word;word-break:break-all}
+caption{overflow:hidden;width:0px;height:0px;margin:-1px 0px;font-size:1px;line-height:0}
+hr,legend{display:none}
+label,button{cursor:pointer}
+input:-ms-input-placeholder,textarea:-ms-input-placeholder{font-size:15px;font-weight:normal;color:#b4b4b4 !important}
+input::-webkit-input-placeholder,textarea::-webkit-input-placeholder{font-size:15px;font-weight:normal;color:#b4b4b4}
+input, textarea, button {color:#555;box-sizing:border-box;-webkit-box-sizing:border-box;-ms-box-sizing:border-box;border-radius:3px;}
+iframe {border:0;}
+
+input[type='checkbox'],
+input[type='radio'] {cursor:pointer;}
+
+select,
+textarea,
+input[type=text],
+input[type=tel],
+input[type=number],
+input[type=password],
+input[type=email] {width:230px; padding:10px 12px; vertical-align:middle; line-height:20px; font-size:15px; color:#555; box-sizing:border-box; outline:none; border-radius:3px; border:1px solid #e0e0e0; transition:border-color 150ms ease-in-out 0s;}
+input[type=password] {font-family:Arial;}
+input[type=password]:-ms-input-placeholder{font-family: 'Malgun Gothic','맑은 고딕', 'Dotum', '돋움', 'Apple SD Gothic Neo', sans-serif;}
+input[type=password]::-webkit-input-placeholder{font-family: 'Malgun Gothic','맑은 고딕', 'Dotum', '돋움', 'Apple SD Gothic Neo', sans-serif;}
+input:focus,
+input:hover {border-color:#009ee3;}
+textarea {width:100%; padding:10px 12px; vertical-align:top; line-height:20px; font-size:15px; overflow:hidden;overflow-y:auto;resize:none;background:#fff;word-break:break-all;word-wrap:break-word;white-space:pre-line;}
+textarea:focus,
+textarea:hover {border-color:#009ee3;}
+input[disabled],
+textarea[disabled] {color:#b4b4b4; border-color:#e0e0e0; background:#f5f5f5;}
+input[readonly],
+textarea[readonly] {color:#b4b4b4; border-color:#e0e0e0; background:#f5f5f5;}
+
+input::-ms-clear {display:none;}
