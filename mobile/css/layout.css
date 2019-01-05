@@ -1,1 +1,15 @@
 @charset "UTF-8";
+@import url(reset.css);
+@import url(ui.lg.mobile.css);
+
+body{height:100%; background:#e4e3e9;}
+header{position:relative; height:40px; background:#c10c3f; color:#fff;}
+header .title {display:flex; height:100%; padding:0 40px; justify-content:center; align-items:center; font-size:14px;}
+header button{position: absolute; top:0; width:40px; height:40px; text-indent:-9999999px;}
+header .btn-history{left:0; background: url("../images/icon_hsitory.png") no-repeat; background-size: contain;}
+header .btn-nav{right:0;background: url("../images/icon_nav.png") no-repeat; background-size: contain;}
+
+.contents{padding:8px;}
+
+footer{text-align:center;}
+footer .copy{font-size:8px; color:#999;}

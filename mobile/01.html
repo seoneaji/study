@@ -2,50 +2,61 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=310, user-scalable=no, viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/ui.lg.mobile.css">
+    <script type="text/javascript" src="js/jquery/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/library.js?v=20181211"></script>
+    <script type="text/javascript" src="js/ui.lg.mobile.js?v=20181211"></script>
     <title>Document</title>
 </head>
 <body>
     <div class="wrap">
         <header>
-            <button type="button">뒤로가기</button>
-            <strong>통계관리</strong>
-            <button type="button">메뉴</button>
+            <button type="button" class="btn-history">뒤로가기</button>
+            <strong class="title">통계관리</strong>
+            <button type="button" class="btn-nav">메뉴</button>
         </header>
-        <section>
+        <section class="container">
             <div class="tab-wrap">
                 <ul class="tab-list">
-                    <li class="active"><a href="">일별</a></li>
-                    <li><a href="">월별</a></li>
+                    <li class="active"><a href='#tab1'>일별</a></li>
+                    <li><a href="#tab2">월별</a></li>
                 </ul>
-                <div class="tab-contents">
-                    <div class="inner">
+                <div class="contents">
+                    <div class="inner" id="tab1">
                         <div class="form-box">
-                            <select style="width:50%">
-                                <option value="">1810019290</option>
-                            </select>
-                            <select style="width:50%">
-                                <option value="">알림톡</option>
-                            </select>
-                            <strong>ebay_옥션_알림톡(Web)</strong>
+                            <div class="select-box">
+                                <select style="width:calc(50% - 1.5px)">
+                                    <option value="">1810019290</option>
+                                </select>
+                                <select style="width:calc(50% - 1.5px)">
+                                    <option value="">알림톡</option>
+                                </select>
+                            </div>
+                            <strong class="title">ebay_옥션_알림톡(Web)</strong>
                             <div class="search-box">
-                                <input type="text">
-                                <span class="">~</span>
-                                <input type="text">
-                                <buttton type="button">검색</buttton>
+                                <div class="data-box">
+                                    <input type="text" data-datepicker style="width:96px;">
+                                </div>
+                                <span class="hypen">~</span>
+                                <div class="data-box">
+                                    <input type="text" data-datepicker style="width:96px;">
+                                </div>
+                                <buttton type="button" class="btn-search"><span>검색</span></buttton>
                             </div>
                         </div>
-                        <table>
-                            <coption>통계관리 일별</coption>
-                            <colgoup>
+                        <table class="tbl-list mt-10">
+                            <caption>통계관리 일별</caption>
+                            <colgroup>
                                 <col style="width:auto">
                                 <col>
                                 <col>
                                 <col>
                                 <col>
-                            </colgoup>
-                            <tbead>
+                            </colgroup>
+                            <thead>
                                 <tr>
                                     <th>날짜</th>
                                     <th>요청</th>
@@ -53,7 +64,7 @@
                                     <th>실패</th>
                                     <th>전송중</th>
                                 </tr>
-                            </tbead>
+                            </thead>
                             <tbody>
                             <tr>
                                 <td>20018-12-21</td>
@@ -65,12 +76,71 @@
                             </tbody>
                             <tfoot>
                                 <tr>
-                                    <td> <strong>총 합계</strong></td>
+                                    <th>총 합계</th>
                                     <td>31,514</td>
                                     <td>309,215</td>
                                     <td>6,283</td>
                                     <td>0</td>
                                 </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                    <div class="inner" id="tab2">
+                        <div class="form-box">
+                            <div class="select-box">
+                                <select style="width:calc(50% - 1.5px)">
+                                    <option value="">1810019290</option>
+                                </select>
+                                <select style="width:calc(50% - 1.5px)">
+                                    <option value="">알림톡</option>
+                                </select>
+                            </div>
+                            <strong class="title">ebay_옥션_알림톡(Web)</strong>
+                            <div class="search-box">
+                                <select style="width:calc(50% - 1.5px)">
+                                    <option value="">1810019290</option>
+                                </select>
+                                <select style="width:calc(50% - 1.5px)">
+                                    <option value="">1810019290</option>
+                                </select>
+                                <buttton type="button" class="btn-search">검색</buttton>
+                            </div>
+                        </div>
+                        <table class="tbl-list mt-10">
+                            <caption>통계관리 일별</caption>
+                            <colgroup>
+                                <col style="width:auto">
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                            </colgroup>
+                            <thead>
+                            <tr>
+                                <th>날짜</th>
+                                <th>요청</th>
+                                <th>성공</th>
+                                <th>실패</th>
+                                <th>전송중</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>20018-12-21</td>
+                                <td>103,310</td>
+                                <td>101,040</td>
+                                <td>2,270</td>
+                                <td>0</td>
+                            </tr>
+                            </tbody>
+                            <tfoot>
+                            <tr>
+                                <th>총 합계</th>
+                                <td>31,514</td>
+                                <td>309,215</td>
+                                <td>6,283</td>
+                                <td>0</td>
+                            </tr>
                             </tfoot>
                         </table>
                     </div>
