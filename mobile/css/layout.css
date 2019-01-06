@@ -4,26 +4,29 @@
 
 html{height:100%;}
 body{height:100%; background:#e4e3e9;}
+
+/* header */
 header{position:relative; height:40px; background:#c10c3f; color:#fff;}
 header .title {display:flex; height:100%; padding:0 40px; justify-content:center; align-items:center; font-size:14px;}
 header button{position: absolute; top:0; width:40px; height:40px; text-indent:-9999999px;}
 header .btn-history{left:0; background: url("../images/icon_hsitory.png") no-repeat; background-size: contain;}
 header .btn-nav{right:0;background: url("../images/icon_nav.png") no-repeat; background-size: contain;}
 
+/* nav */
+.nav-wrap{position: fixed; top:0; left:0; width:100%; height:100%; overflow:hidden;}
+.nav-wrap > .inner{position:relative; float:right; width:234px; height:100%; background:rgba(0,0,0, 0.88);}
+.nav-wrap .logo{position: fixed; bottom:21.3px;left: 106px;width:43px;height:37.5px;text-indent: -99999px;background:url(../images/nav_logo.png) no-repeat;background-size:cover;}
+.gnb{margin-top:46.5px;}
+.gnb li a{display: block; padding:5px 30px 5px; color:#fff; font-size:20px;}
+.gnb li ul a{padding:7px 30px;font-size:12.5px; color:#999;}
+.nav-wrap .info {position:absolute; bottom:77.3px; left:0; width:100%;}
+.nav-wrap .info li a{display:block; padding:5px 30px; font-size:10px; color:#999;}
+.nav-wrap .btn-close{position:absolute; top:2.5px; right:5.2px; width:30px; height:30px;}
+.nav-wrap .btn-close span{position:relative; display:block; width:13.5px; height:13.5px; margin:0 auto; text-indent: -99999px; background:url(../images/icon_close.png) no-repeat; background-size: cover;}
+
+/* contents */
 .contents{padding:8px;}
 
+/* footer */
 footer{text-align:center;}
 footer .copy{font-size:8px; color:#999;}
-
-.login{background:url(../images/login_bg.jpg) no-repeat;background-size:cover; text-align:center; }
-.login .wrap{padding:17.5px;}
-.login h1{width:43px; height:37.5px; margin:0 auto; background:url(../images/logo.png) no-repeat; background-size: cover; text-indent:-99999px}
-.login-box{width:216.5px; margin:25px auto 0; padding:20px; background: #fff;}
-.login-box input + input{margin-top:8.5px;}
-.login-box label{display:block; margin-top:7.5px; text-align:right;}
-.login-box .checkbox{width:12.5px; height:12.5px;}
-.login-box .checkbox:before{border-radius: 100%; border:1px solid#999;background-image: none !important;}
-.login-box .checkbox:after {content:''; position:absolute; top:0; left:0; height:100%; width:100%; background:url(../images/login_on.png) no-repeat; background-size: cover; opacity:0; transform:translateY(-5px) scale(0); transition:70ms ease-in-out 0s; transition-property:opacity,transform;}
-.login-box .checkbox.checked:after {opacity:1; transform:translateY(0) scale(1);}
-.login-box .btn-login{display:block; width:100%; height:38px; margin:17.5px 0 0 0; border-radius:18.5px; background:#c10c3f; color:#fff; font-size:11px; font-wieght:700;}
-.login-box .btn-link{display:inline-block; margin-top:21px; font-size:10px; color:#999; text-decoration: underline;}
