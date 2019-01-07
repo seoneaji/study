@@ -2,19 +2,19 @@
 /* ko */
 @font-face {
     font-family:'Noto Sans';
-    src:url('../font/NotoSansCJKkr-Regular.woff') format('woff');
+    src:url('../font/NotoSansKR-Regular-Hestia.woff') format('woff');
     font-weight:normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'Noto Sans';
-    src:url('../font/NotoSansCJKkr-Medium.woff') format('woff');
+    src:url('../font/NotoSansKR-Medium-Hestia.woff') format('woff');
     font-weight:bold;
     font-style: normal;
 }
 @font-face {
     font-family: 'Noto Sans';
-    src:url('../font/NotoSansCJKkr-Bold.woff') format('woff');
+    src:url('../font/NotoSansKR-Bold-Hestia.woff') format('woff');
     font-weight:700;
     font-style: normal;
 }
