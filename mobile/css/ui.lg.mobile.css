@@ -113,7 +113,7 @@ al-c{text-align:center !important;}
 
 /* login */
 .login{background:url(../images/login_bg.jpg) no-repeat;background-size:cover; text-align:center; }
-.login .wrap{padding:17.5px;}
+.login .container{height:calc(100% - 45px); padding:17.5px; }
 .login h1{width:43px; height:37.5px; margin:0 auto; background:url(../images/logo.png) no-repeat; background-size: cover; text-indent:-99999px}
 .login-box{width:216.5px; margin:25px auto 0; padding:20px; background: #fff;}
 .login-box input + input{margin-top:8.5px;}

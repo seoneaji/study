@@ -4,6 +4,7 @@
 
 html{height:100%;}
 body{height:100%; background:#e4e3e9;}
+.wrap{height:100%;}
 
 /* header */
 header{position:relative; height:40px; background:#c10c3f; color:#fff;}
@@ -27,8 +28,9 @@ header .btn-nav{right:0;background: url("../images/icon_nav.png") no-repeat; bac
 .nav-wrap.active > .inner{right: 0; transition: all ease 0.5s;}
 
 /* contents */
+.container{height:calc(100% - 40px - 45px); box-sizing:border-box;}
 .contents{padding:8px;}
 
 /* footer */
-footer{text-align:center;}
+footer{height:45px; line-height:45px; text-align:center;}
 footer .copy{font-size:8px; color:#999;}

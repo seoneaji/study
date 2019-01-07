@@ -198,7 +198,7 @@ var lgmobile = function(){
                 })
 
             });
-        }
+        },
     };
     return common;
 }();
