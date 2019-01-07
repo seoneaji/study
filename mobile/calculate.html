@@ -12,61 +12,83 @@
     <title>Document</title>
 </head>
 <body>
-<div class="wrap">
-    <header>
-        <button type="button" class="btn-history">뒤로가기</button>
-        <strong class="title">정산관리</strong>
-        <button type="button" class="btn-nav">메뉴</button>
-    </header>
-    <section>
-        <div class="contents">
-            <div class="form-box">
-                <div class="search-box">
-                    <select style="width:calc(50% - 1.5px)">
-                        <option value="">1810019290</option>
-                    </select>
-                    <select style="width:calc(50% - 1.5px)">
-                        <option value="">1810019290</option>
-                    </select>
-                    <buttton type="button" class="btn-search"><span>검색</span></buttton>
+    <div class="wrap">
+        <header>
+            <button type="button" class="btn-history">뒤로가기</button>
+            <strong class="title">정산관리</strong>
+            <button type="button" class="btn-nav">메뉴</button>
+        </header>
+        <section>
+            <div class="contents">
+                <div class="form-box">
+                    <div class="search-box">
+                        <select style="width:calc(50% - 1.5px)">
+                            <option value="">1810019290</option>
+                        </select>
+                        <select style="width:calc(50% - 1.5px)">
+                            <option value="">1810019290</option>
+                        </select>
+                        <buttton type="button" class="btn-search"><span>검색</span></buttton>
+                    </div>
                 </div>
-            </div>
-            <table class="tbl-list mt-10">
-                <caption>정산관리</caption>
-                <colgroup>
-                    <col style="width:auto">
-                    <col>
-                    <col>
-                    <col>
-                    <col>
-                    <col>
-                </colgroup>
-                <thead>
+                <table class="tbl-list mt-10">
+                    <caption>정산관리</caption>
+                    <colgroup>
+                        <col style="width:auto">
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>정산월</th>
+                            <th>정산건수</th>
+                            <th>공급가액</th>
+                            <th>세액</th>
+                            <th>합계</th>
+                            <th>상세</th>
+                        </tr>
+                    </thead>
+                    <tbody>
                     <tr>
-                        <th>정산월</th>
-                        <th>정산건수</th>
-                        <th>공급가액</th>
-                        <th>세액</th>
-                        <th>합계</th>
-                        <th>상세</th>
+                        <td>20018-12-21</td>
+                        <td>103,310</td>
+                        <td>101,040</td>
+                        <td>2,270</td>
+                        <td>0</td>
+                        <td><a href="#">상세보기</a></td>
                     </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td>20018-12-21</td>
-                    <td>103,310</td>
-                    <td>101,040</td>
-                    <td>2,270</td>
-                    <td>0</td>
-                    <td><a href="#">상세보기</a></td>
-                </tr>
-                </tbody>
-            </table>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <footer>
+            <p class="copy">Copyright 2018 LG CNS. All Right Reserved</p>
+        </footer>
+    </div>
+    <nav class="nav-wrap">
+        <div class="inner">
+            <div class="logo">톡 드림</div>
+            <ul class="gnb">
+                <li>
+                    <a href="">통계관리</a>
+                    <ul>
+                        <li><a href="">일별</a></li>
+                        <li><a href="">월별</a></li>
+                    </ul>
+                </li>
+                <li><a href="">정산관리</a></li>
+                <li><a href="">Agent 관리</a></li>
+                <li><a href="">공지사항</a></li>
+            </ul>
+            <ul class="info">
+                <li><a href="">톡드림 메세지</a></li>
+                <li><a href="">개인정보 처리방침</a></li>
+            </ul>
+            <button type="button" class="btn-close"><span>닫기</span></button>
         </div>
-    </section>
-    <footer>
-        <p class="copy">Copyright 2018 LG CNS. All Right Reserved</p>
-    </footer>
-</div>
+    </nav>
 </body>
 </html>

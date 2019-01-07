@@ -73,6 +73,111 @@ var lgmobile = function(){
                 });
             });
         },
+        file : function(){
+            $("input[type=file]").each(function(){
+                if ($(this).closest(".file").length) return;
+                var title = (this.hasAttribute("data-title")) ? $(this).data("title") : "파일 업로드";
+                var $this = $(this);
+                var $wrap = $this.wrap("<span class='file'></span>").closest(".file");
+                var placeholder = this.hasAttribute("placeholder") ? $this.attr("placeholder") : "선택된 파일 없음";
+                $wrap.prepend("<span class='value'>"+placeholder+"</span><button type='button' disabled class='btn-default'><span>"+title+"</span></button>");
+                if (this.hasAttribute("style")) $wrap.width($this.outerWidth());
+                if (this.hasAttribute("data-btn-type")) $wrap.addClass("btn-type");
+                fileChange($this);
+                common.hover(this);
+            });
+            function fileChange($obj) {
+                $obj.off("change.fileChange").on("change.fileChange", function(e){
+                    var placeholder = this.hasAttribute("placeholder") ? $obj.attr("placeholder") : "선택된 파일 없음";
+                    if (this.files.length === 0){
+                        $obj.siblings(".value").html(placeholder);
+                        $obj.closest(".file").removeClass("selected");
+                    } else if (this.files.length === 1) {
+                        $obj.siblings(".value").html(this.files[0].name);
+                        $obj.closest(".file").addClass("selected");
+                    } else if (this.files.length > 9) {
+                        alert("많음");
+                        var $clone = $(this).val('').clone(true);
+                        $(this).replaceWith($clone);
+                        $obj.siblings(".value").html(placeholder);
+                        fileChange($clone);
+                        $obj.closest(".file").removeClass("selected");
+                    } else {
+                        $obj.siblings(".value").html(this.files[0].name+"외 "+ (this.files.length - 1) +"개");
+                        $obj.closest(".file").addClass("selected");
+                    }
+                    common.disabled(this);
+                }).change();
+            }
+        },
+        hover : function(obj){
+            if (obj.hasAttribute("disabled")) return;
+            if (!$(obj).closest("label").length){
+                $(obj).on("mouseenter focusin", function(){
+                    $(obj).parent().addClass("hover");
+                }).on("mouseleave focusout", function(){
+                    $(obj).parent().removeClass("hover");
+                });
+            }
+            try {
+                var $target = $(obj).closest("label").length ? $(obj).closest("label") : $("label[for="+$(obj).attr("id")+"]");
+                $target.on("mouseenter focusin", function(){
+                    $(obj).parent().addClass("hover");
+                }).on("mouseleave focusout", function(){
+                    $(obj).parent().removeClass("hover");
+                });
+            } catch (e) {}
+        },
+        disabled : function(obj){
+            if (obj.hasAttribute("disabled")){
+                $(obj).parent().addClass("disabled");
+                //$(obj).closest("label").addClass("disabled");
+                //$("label[for="+$(obj).attr("id")+"]").addClass("disabled");
+            }
+        },
+        textarea: function () {
+            var byteChk = function(el, maxsize){
+                var str = $(el).val();
+                var size = 0;
+                var text = '';
+                var rIndex = str.length;
+                var byteSize = function(str){
+                    var pattern = /[\u0000-\u007f]|([\u0080-\u07ff]|(.))/g;
+                    return str.replace(pattern,"$&$1").length; // 한글2Byte
+                    // return str.replace(pattern,"$&$1$2").length; // 한글3Byte
+                };
+                for (var i=0; i<str.length; i++){
+                    text += str.charAt(i);
+                    size = byteSize(text);
+                    if(size == maxsize) {
+                        rIndex = i + 1;
+                        break;
+                    } else if (size > maxsize){
+                        rIndex = i;
+                        break;
+                    }
+                }
+                $(el).val(str.substring(0, rIndex));
+                return size;
+            };
+            var keyEvent = function(el){
+                var max = $(el).attr('maxlength');
+                //var current = byteChk(el, max); // Byte
+                var current = $(el).val().length; // 글자수
+                if(Number(max) >= Number(current)) {
+                    $(el).next('span.count').find("em").text(current);
+                }
+            };
+            $.each($('textarea'), function(){
+                if (!this.hasAttribute('maxlength')) return;
+                if ($(this).closest(".textarea").length) return;
+                var $wrap = $(this).wrap("<span class='textarea'></span>").closest(".textarea");
+                if (this.hasAttribute("style")) $wrap.width($(this).outerWidth());
+                $wrap.append("<span class='count'><em></em> / <span>"+$(this).attr("maxlength")+" 자</span></span>");
+                keyEvent(this);
+                $(this).on('input', function () { keyEvent(this); });
+            });
+        },
         datepicker : function(){
 
             $.datepicker.regional['ko'] = {
@@ -186,19 +291,19 @@ var lgmobile = function(){
             }
         },
         nav : function(){
-           $('.btn-nav').each(function () {
-               $(this).on('click.nav', function () {
-                   $('.nav-wrap').addClass("active");
-               })
+            $('.btn-nav').each(function () {
+                $(this).on('click.nav', function () {
+                    $('.nav-wrap').addClass("active");
+                })
 
-           });
+            });
             $('.btn-close').each(function () {
                 $(this).on('click.close', function () {
                     $('.nav-wrap').removeClass("active");
                 })
 
             });
-        },
+        }
     };
     return common;
 }();

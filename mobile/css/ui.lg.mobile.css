@@ -113,7 +113,7 @@ al-c{text-align:center !important;}
 
 /* login */
 .login{background:url(../images/login_bg.jpg) no-repeat;background-size:cover; text-align:center; }
-.login .container{height:calc(100% - 45px); padding:17.5px; }
+.login .container{min-height:calc(100% - 45px); padding:17.5px; }
 .login h1{width:43px; height:37.5px; margin:0 auto; background:url(../images/logo.png) no-repeat; background-size: cover; text-indent:-99999px}
 .login-box{width:216.5px; margin:25px auto 0; padding:20px; background: #fff;}
 .login-box input + input{margin-top:8.5px;}
@@ -124,4 +124,4 @@ al-c{text-align:center !important;}
 .login-box .checkbox.checked:after {opacity:1; transform:translateY(0) scale(1);}
 .login-box .btn-login{display:block; width:100%; height:38px; margin:17.5px 0 0 0; border-radius:18.5px; background:#c10c3f; color:#fff; font-size:11px; font-wieght:700;}
 .login-box .btn-link{display:inline-block; margin-top:21px; font-size:10px; color:#999; text-decoration: underline;}
-
+.login footer .copy{color:#fff;}

@@ -12,37 +12,127 @@
     <title>Document</title>
 </head>
 <body>
-<div class="wrap">
-    <header>
-        <button type="button" class="btn-history">뒤로가기</button>
-        <strong class="title">Agent 관리</strong>
-        <button type="button" class="btn-nav">메뉴</button>
-    </header>
-    <section class="container">
-        <div class="contents">
-            <div class="agent-top">
-                <select style="width:136px">
-                    <option value="">1810019290</option>
-                </select>
-                <button type="button" class="btn-refresh"><span>새로고침</span></button>
-            </div>
-            <ul class="agent-list mt-7">
-                <li data-accordion-item>
-                    <button type="button" data-accordion-anchor>
-                        <span class="date">(1810019291)</span>
-                        <strong class="title">ebay_G9_친구톡</strong>
-                        <span class="connect">끊김</span>
-                    </button>
-                    <div class="inner-box" data-accordion-target>
-                        <table class="tbl-list">
-                            <caption>유입율</caption>
-                            <colgroup>
-                                <col style="width:25%">
-                                <col style="width:25%">
-                                <col style="width:25%">
-                                <col style="width:25%">
-                            </colgroup>
-                            <tbody>
+    <div class="wrap">
+        <header>
+            <button type="button" class="btn-history">뒤로가기</button>
+            <strong class="title">Agent 관리</strong>
+            <button type="button" class="btn-nav">메뉴</button>
+        </header>
+        <section class="container">
+            <div class="contents">
+                <div class="agent-top">
+                    <select style="width:136px">
+                        <option value="">1810019290</option>
+                    </select>
+                    <button type="button" class="btn-refresh"><span>새로고침</span></button>
+                </div>
+                <ul class="agent-list mt-7">
+                    <li data-accordion-item>
+                        <button type="button" data-accordion-anchor>
+                            <span class="date">(1810019291)</span>
+                            <strong class="title">ebay_G9_친구톡</strong>
+                            <span class="connect">끊김</span>
+                        </button>
+                        <div class="inner-box" data-accordion-target>
+                            <table class="tbl-list">
+                                <caption>유입율</caption>
+                                <colgroup>
+                                    <col style="width:25%">
+                                    <col style="width:25%">
+                                    <col style="width:25%">
+                                    <col style="width:25%">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th>당일유입</th>
+                                        <td>3456</td>
+                                        <th>성공률</th>
+                                        <td>40%</td>
+                                    </tr>
+                                    <tr>
+                                        <th>당일성공</th>
+                                        <td>3456</td>
+                                        <th>당일실</th>
+                                        <td>233</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <strong class="tbl-title">
+                                Agent 알람
+                                <input type="checkbox">
+                            </strong>
+                            <table class="tbl-list mt-5">
+                                <caption>Agent 알람</caption>
+                                <colgroup>
+                                    <col style="width:25%">
+                                    <col style="width:25%">
+                                    <col style="width:25%">
+                                    <col style="width:25%">
+                                </colgroup>
+                                <tbody>
+                                <tr>
+                                    <th>DB오류</th>
+                                    <td><input type="checkbox"></td>
+                                    <th>네트워트</th>
+                                    <td><input type="checkbox"></td>
+                                </tr>
+                                <tr>
+                                    <th>발송지연</th>
+                                    <td><input type="checkbox"></td>
+                                    <th>비활성</th>
+                                    <td><input type="checkbox"></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <strong class="tbl-title flex-title">
+                                알림 담당자
+                                <button type="button" class="btn-plus"><span>담당자추가</span></button>
+                            </strong>
+                            <table class="tbl-list mt-5">
+                                <caption>Agent 알람</caption>
+                                <colgroup>
+                                    <col style="width:">
+                                    <col style="width:">
+                                    <col style="width:">
+                                </colgroup>
+                                <tbody>
+                                <tr>
+                                    <th>홍길동</th>
+                                    <td>010-1234-5678</td>
+                                    <td><button type="button" class="btn-del"><span>삭제</span></button></td>
+                                </tr>
+                                <tr>
+                                    <th>홍길동</th>
+                                    <td>010-1234-5678</td>
+                                    <td><button type="button" class="btn-del"><span>삭제</span></button></td>
+                                </tr>
+                                <tr>
+                                    <th>홍길동</th>
+                                    <td>010-1234-5678</td>
+                                    <td><button type="button" class="btn-del"><span>삭제</span></button></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <p class="desc">Agent 설치 IP 정보 : <span>255.255.255.255</span></p>
+                            <p class="desc">마지막 접속 시각 :  <span>2018-12-24 13:10</span></p>
+                        </div>
+                    </li>
+                    <li data-accordion-item>
+                        <button type="button" data-accordion-anchor="active">
+                            <span class="date">(1810019291)</span>
+                            <strong class="title">ebay_G9_친구톡</strong>
+                            <span class="connect">끊김</span>
+                        </button>
+                        <div class="inner-box" data-accordion-target>
+                            <table class="tbl-list">
+                                <caption>유입율</caption>
+                                <colgroup>
+                                    <col style="width:25%">
+                                    <col style="width:25%">
+                                    <col style="width:25%">
+                                    <col style="width:25%">
+                                </colgroup>
+                                <tbody>
                                 <tr>
                                     <th>당일유입</th>
                                     <td>3456</td>
@@ -55,164 +145,96 @@
                                     <th>당일실</th>
                                     <td>233</td>
                                 </tr>
-                            </tbody>
-                        </table>
-                        <strong class="tbl-title">
-                            Agent 알람
-                            <input type="checkbox">
-                        </strong>
-                        <table class="tbl-list mt-5">
-                            <caption>Agent 알람</caption>
-                            <colgroup>
-                                <col style="width:25%">
-                                <col style="width:25%">
-                                <col style="width:25%">
-                                <col style="width:25%">
-                            </colgroup>
-                            <tbody>
-                            <tr>
-                                <th>DB오류</th>
-                                <td><input type="checkbox"></td>
-                                <th>네트워트</th>
-                                <td><input type="checkbox"></td>
-                            </tr>
-                            <tr>
-                                <th>발송지연</th>
-                                <td><input type="checkbox"></td>
-                                <th>비활성</th>
-                                <td><input type="checkbox"></td>
-                            </tr>
-                            </tbody>
-                        </table>
-                        <strong class="tbl-title flex-title">
-                            알림 담당자
-                            <button type="button" class="btn-plus"><span>담당자추가</span></button>
-                        </strong>
-                        <table class="tbl-list mt-5">
-                            <caption>Agent 알람</caption>
-                            <colgroup>
-                                <col style="width:">
-                                <col style="width:">
-                                <col style="width:">
-                            </colgroup>
-                            <tbody>
-                            <tr>
-                                <th>홍길동</th>
-                                <td>010-1234-5678</td>
-                                <td><button type="button" class="btn-del"><span>삭제</span></button></td>
-                            </tr>
-                            <tr>
-                                <th>홍길동</th>
-                                <td>010-1234-5678</td>
-                                <td><button type="button" class="btn-del"><span>삭제</span></button></td>
-                            </tr>
-                            <tr>
-                                <th>홍길동</th>
-                                <td>010-1234-5678</td>
-                                <td><button type="button" class="btn-del"><span>삭제</span></button></td>
-                            </tr>
-                            </tbody>
-                        </table>
-                        <p class="desc">Agent 설치 IP 정보 : <span>255.255.255.255</span></p>
-                        <p class="desc">마지막 접속 시각 :  <span>2018-12-24 13:10</span></p>
-                    </div>
+                                </tbody>
+                            </table>
+                            <strong class="tbl-title">
+                                Agent 알람
+                                <input type="checkbox">
+                            </strong>
+                            <table class="tbl-list mt-5">
+                                <caption>Agent 알람</caption>
+                                <colgroup>
+                                    <col style="width:25%">
+                                    <col style="width:25%">
+                                    <col style="width:25%">
+                                    <col style="width:25%">
+                                </colgroup>
+                                <tbody>
+                                <tr>
+                                    <th>DB오류</th>
+                                    <td><input type="checkbox"></td>
+                                    <th>네트워트</th>
+                                    <td><input type="checkbox"></td>
+                                </tr>
+                                <tr>
+                                    <th>발송지연</th>
+                                    <td><input type="checkbox"></td>
+                                    <th>비활성</th>
+                                    <td><input type="checkbox"></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <strong class="tbl-title flex-title">
+                                알림 담당자
+                                <button type="button" class="btn-plus"><span>담당자추가</span></button>
+                            </strong>
+                            <table class="tbl-list mt-5">
+                                <caption>Agent 알람</caption>
+                                <colgroup>
+                                    <col style="width:">
+                                    <col style="width:">
+                                    <col style="width:">
+                                </colgroup>
+                                <tbody>
+                                <tr>
+                                    <th>홍길동</th>
+                                    <td>010-1234-5678</td>
+                                    <td><button type="button" class="btn-del"><span>삭제</span></button></td>
+                                </tr>
+                                <tr>
+                                    <th>홍길동</th>
+                                    <td>010-1234-5678</td>
+                                    <td><button type="button" class="btn-del"><span>삭제</span></button></td>
+                                </tr>
+                                <tr>
+                                    <th>홍길동</th>
+                                    <td>010-1234-5678</td>
+                                    <td><button type="button" class="btn-del"><span>삭제</span></button></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <p class="desc">Agent 설치 IP 정보 : <span>255.255.255.255</span></p>
+                            <p class="desc">마지막 접속 시각 :  <span>2018-12-24 13:10</span></p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <footer>
+            <p class="copy">Copyright 2018 LG CNS. All Right Reserved</p>
+        </footer>
+    </div>
+    <nav class="nav-wrap">
+        <div class="inner">
+            <div class="logo">톡 드림</div>
+            <ul class="gnb">
+                <li>
+                    <a href="">통계관리</a>
+                    <ul>
+                        <li><a href="">일별</a></li>
+                        <li><a href="">월별</a></li>
+                    </ul>
                 </li>
-                <li data-accordion-item>
-                    <button type="button" data-accordion-anchor="active">
-                        <span class="date">(1810019291)</span>
-                        <strong class="title">ebay_G9_친구톡</strong>
-                        <span class="connect">끊김</span>
-                    </button>
-                    <div class="inner-box" data-accordion-target>
-                        <table class="tbl-list">
-                            <caption>유입율</caption>
-                            <colgroup>
-                                <col style="width:25%">
-                                <col style="width:25%">
-                                <col style="width:25%">
-                                <col style="width:25%">
-                            </colgroup>
-                            <tbody>
-                            <tr>
-                                <th>당일유입</th>
-                                <td>3456</td>
-                                <th>성공률</th>
-                                <td>40%</td>
-                            </tr>
-                            <tr>
-                                <th>당일성공</th>
-                                <td>3456</td>
-                                <th>당일실</th>
-                                <td>233</td>
-                            </tr>
-                            </tbody>
-                        </table>
-                        <strong class="tbl-title">
-                            Agent 알람
-                            <input type="checkbox">
-                        </strong>
-                        <table class="tbl-list mt-5">
-                            <caption>Agent 알람</caption>
-                            <colgroup>
-                                <col style="width:25%">
-                                <col style="width:25%">
-                                <col style="width:25%">
-                                <col style="width:25%">
-                            </colgroup>
-                            <tbody>
-                            <tr>
-                                <th>DB오류</th>
-                                <td><input type="checkbox"></td>
-                                <th>네트워트</th>
-                                <td><input type="checkbox"></td>
-                            </tr>
-                            <tr>
-                                <th>발송지연</th>
-                                <td><input type="checkbox"></td>
-                                <th>비활성</th>
-                                <td><input type="checkbox"></td>
-                            </tr>
-                            </tbody>
-                        </table>
-                        <strong class="tbl-title flex-title">
-                            알림 담당자
-                            <button type="button" class="btn-plus"><span>담당자추가</span></button>
-                        </strong>
-                        <table class="tbl-list mt-5">
-                            <caption>Agent 알람</caption>
-                            <colgroup>
-                                <col style="width:">
-                                <col style="width:">
-                                <col style="width:">
-                            </colgroup>
-                            <tbody>
-                            <tr>
-                                <th>홍길동</th>
-                                <td>010-1234-5678</td>
-                                <td><button type="button" class="btn-del"><span>삭제</span></button></td>
-                            </tr>
-                            <tr>
-                                <th>홍길동</th>
-                                <td>010-1234-5678</td>
-                                <td><button type="button" class="btn-del"><span>삭제</span></button></td>
-                            </tr>
-                            <tr>
-                                <th>홍길동</th>
-                                <td>010-1234-5678</td>
-                                <td><button type="button" class="btn-del"><span>삭제</span></button></td>
-                            </tr>
-                            </tbody>
-                        </table>
-                        <p class="desc">Agent 설치 IP 정보 : <span>255.255.255.255</span></p>
-                        <p class="desc">마지막 접속 시각 :  <span>2018-12-24 13:10</span></p>
-                    </div>
-                </li>
+                <li><a href="">정산관리</a></li>
+                <li><a href="">Agent 관리</a></li>
+                <li><a href="">공지사항</a></li>
             </ul>
+            <ul class="info">
+                <li><a href="">톡드림 메세지</a></li>
+                <li><a href="">개인정보 처리방침</a></li>
+            </ul>
+            <button type="button" class="btn-close"><span>닫기</span></button>
         </div>
-    </section>
-    <footer>
-        <p class="copy">Copyright 2018 LG CNS. All Right Reserved</p>
-    </footer>
-</div>
+    </nav>
 </body>
 </html>
