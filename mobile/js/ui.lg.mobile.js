@@ -184,13 +184,13 @@ var lgmobile = function(){
             $('.btn-nav').each(function () {
                 $(this).off('click.nav').on('click.nav', function () {
                     $('.nav-wrap').addClass("active");
-                    $('html').css("nav-open");
+                    $('.wrap').addClass("nav-open");
                 })
             });
             $('.btn-close').each(function () {
                 $(this).off('click.close').on('click.close', function () {
                     $('.nav-wrap').removeClass("active");
-                    $('html').removeClass("nav-open");
+                    $('.wrap').removeClass("nav-open");
                 })
             });
         }
