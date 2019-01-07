@@ -65,7 +65,7 @@ var lgmobile = function(){
                             $(this).selectmenu("menuWidget").closest(".ui-selectmenu-menu").css({"z-index":"51000"})
                         }
                     }
-                }).selectmenu("menuWidget").scrollbar();
+                })
             });
             $(window).off("resize.selectPosition").on("resize.selectPosition",function(){
                 $("[role='combobox'][aria-expanded='true']").each(function(){
@@ -294,11 +294,13 @@ var lgmobile = function(){
             $('.btn-nav').each(function () {
                 $(this).off('click.nav').on('click.nav', function () {
                     $('.nav-wrap').addClass("active");
+                    $('.wrap').addClass('nav-open');
                 })
             });
             $('.btn-close').each(function () {
                 $(this).off('click.close').on('click.close', function () {
                     $('.nav-wrap').removeClass("active");
+                    $('.wrap').removeClass('nav-open');
                 })
             });
         }
