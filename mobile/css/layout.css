@@ -2,9 +2,7 @@
 @import url(reset.css);
 @import url(ui.lg.mobile.css);
 
-html{min-height:100%;}
-body{min-height:100%;background:#e4e3e9;}
-.wrap{min-height:100%;}
+body{background:#e4e3e9;}
 
 /* header */
 header{position:relative; height:40px; background:#c10c3f; color:#fff;}
@@ -27,7 +25,7 @@ header .btn-nav{right:0;background: url("../images/icon_nav.png") no-repeat; bac
 .nav-wrap.active {right:0; }
 .wrap.nav-open{position:fixed; top:0; left:0; width:100%;}
 /* contents */
-.container{min-height:calc(100% - 40px - 45px); box-sizing:border-box;}
+.container{min-height: calc(100vh - 40px - 45px);box-sizing:border-box;}
 .contents{padding:8px;}
 
 /* footer */

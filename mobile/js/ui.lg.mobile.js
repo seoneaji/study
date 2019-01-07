@@ -42,23 +42,30 @@ var lgmobile = function(){
             }
             common.disabled(obj[0]);
         },
-        radio : function(){
-            $("input[type=radio]").each(function(){
-                if ($(this).closest(".radio").length) return;
-                $(this).wrap("<span class='radio'></span>");
-                $(this).on("change", function(){
-                    $("input[type=radio][name="+$(this).attr("name")+"]").each(function(){
-                        var $wrap = $(this).closest(".radio");
-                        if ($(this).prop("checked")){
-                            $wrap.addClass("checked");
-                        } else {
-                            $wrap.removeClass("checked");
-                        }
-                    });
-                    common.disabled(this);
-                }).change();
-                common.hover(this);
-            });
+        hover : function(obj){
+            if (obj.hasAttribute("disabled")) return;
+            if (!$(obj).closest("label").length){
+                $(obj).on("mouseenter focusin", function(){
+                    $(obj).parent().addClass("hover");
+                }).on("mouseleave focusout", function(){
+                    $(obj).parent().removeClass("hover");
+                });
+            }
+            try {
+                var $target = $(obj).closest("label").length ? $(obj).closest("label") : $("label[for="+$(obj).attr("id")+"]");
+                $target.on("mouseenter focusin", function(){
+                    $(obj).parent().addClass("hover");
+                }).on("mouseleave focusout", function(){
+                    $(obj).parent().removeClass("hover");
+                });
+            } catch (e) {}
+        },
+        disabled : function(obj){
+            if (obj.hasAttribute("disabled")){
+                $(obj).parent().addClass("disabled");
+                //$(obj).closest("label").addClass("disabled");
+                //$("label[for="+$(obj).attr("id")+"]").addClass("disabled");
+            }
         },
         datepicker : function(){
 
