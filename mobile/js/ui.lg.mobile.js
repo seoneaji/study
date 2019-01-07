@@ -98,6 +98,7 @@ var lgmobile = function(){
                     date: true,
                     datePattern: ['Y', 'm', 'd']
                 });
+                console.log(max);
                 $this.datepicker({maxDate:max, minDate:min});
                 if ($this.closest(".ipt-daterange").length){
                     var minMax = $this.nextAll("[data-datepicker]").length ? "minDate" : "maxDate";
