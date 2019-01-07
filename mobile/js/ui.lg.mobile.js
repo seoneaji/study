@@ -292,16 +292,14 @@ var lgmobile = function(){
         },
         nav : function(){
             $('.btn-nav').each(function () {
-                $(this).on('click.nav', function () {
+                $(this).off('click.nav').on('click.nav', function () {
                     $('.nav-wrap').addClass("active");
                 })
-
             });
             $('.btn-close').each(function () {
-                $(this).on('click.close', function () {
+                $(this).off('click.close').on('click.close', function () {
                     $('.nav-wrap').removeClass("active");
                 })
-
             });
         }
     };
