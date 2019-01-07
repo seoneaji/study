@@ -13,8 +13,8 @@ header .btn-history{left:0; background: url("../images/icon_hsitory.png") no-rep
 header .btn-nav{right:0;background: url("../images/icon_nav.png") no-repeat; background-size: contain;}
 
 /* nav */
-.nav-wrap{position: fixed; top:0; left:0; width:100%; height:100%; overflow:hidden;}
-.nav-wrap > .inner{position:relative; float:right; width:234px; height:100%; background:rgba(0,0,0, 0.88);}
+.nav-wrap{position: fixed; top:0; left:0; display:none; width:100%; height:100%; overflow:hidden;}
+.nav-wrap > .inner{position: absolute; top: 0; right: -234px; width:234px; height:100%;background:rgba(0,0,0, 0.88);}
 .nav-wrap .logo{position: fixed; bottom:21.3px;left: 106px;width:43px;height:37.5px;text-indent: -99999px;background:url(../images/nav_logo.png) no-repeat;background-size:cover;}
 .gnb{margin-top:46.5px;}
 .gnb li a{display: block; padding:5px 30px 5px; color:#fff; font-size:20px;}
@@ -23,6 +23,8 @@ header .btn-nav{right:0;background: url("../images/icon_nav.png") no-repeat; bac
 .nav-wrap .info li a{display:block; padding:5px 30px; font-size:10px; color:#999;}
 .nav-wrap .btn-close{position:absolute; top:2.5px; right:5.2px; width:30px; height:30px;}
 .nav-wrap .btn-close span{position:relative; display:block; width:13.5px; height:13.5px; margin:0 auto; text-indent: -99999px; background:url(../images/icon_close.png) no-repeat; background-size: cover;}
+.nav-wrap.active {display:block;}
+.nav-wrap.active > .inner{right: 0; transition: all ease 0.5s;}
 
 /* contents */
 .contents{padding:8px;}
