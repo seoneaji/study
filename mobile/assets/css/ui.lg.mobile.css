@@ -77,7 +77,7 @@
 .tbl-list td:first-child{border-left:none;}
 .tbl-list th{color:#222;}
 .tbl-list th,
-.tbl-list td{padding: 9px 5px;background:#fff;border-left:1px solid #e5e5e5;border-bottom:1px solid #e5e5e5;text-align:center;font-size:9px;vertical-align: middle;}
+.tbl-list td{padding: 9px 5px;background:#fff;border-left:1px solid #e5e5e5;border-bottom:1px solid #e5e5e5;text-align:center;font-size:9px;vertical-align: middle;word-break: keep-all;}
 .tbl-list thead tr:last-child th{border-bottom:none;}
 .tbl-list tbody tr:first-child th,
 .tbl-list tbody tr:first-child td{border-top:1px solid #a3a3a3;}
