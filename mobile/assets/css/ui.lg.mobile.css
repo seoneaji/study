@@ -24,7 +24,7 @@
 .tab-list{display: flex; height:34px; border-bottom:1px solid #cdccd1; background:#fff;}
 .tab-list li{flex:1 1 auto;}
 .tab-list li a{display: flex; height:100%; justify-content:center; align-items:center; color:#222; box-sizing:border-box}
-.tab-list li.active a{border-bottom:2px solid #c10c3f;}
+.tab-list li.active a{border-bottom:2px solid #c10c3f; font-weight:bold}
 
 /* form box */
 .form-box{padding:10px; border-bottom:1px solid #cdccd1; background:#fff;}
@@ -56,7 +56,7 @@
 .ui-datepicker-trigger{position:absolute; top:0; right:0; width:31px;height:100%;background:url(../images/icon-calendar.png) no-repeat;background-size:cover;}
 
 /* checkbox */
-.checkbox {position:relative; display:inline-block; cursor:pointer; height:10px; width:14px; margin:0 5px 2px 0; vertical-align:middle; overflow:hidden;}
+.checkbox {position:relative; display:inline-block; cursor:pointer; height:10px; width:15px; margin:0 5px 2px 0; vertical-align:middle; overflow:hidden;}
 .checkbox input[type=checkbox] {z-index:2; position:absolute; top:0; left:0; height:100%; width:100%; margin:0; opacity:0; cursor:pointer;}
 .checkbox:before {content:'';display:inline-block;height:100%;width:100%;overflow:hidden; vertical-align:top; box-sizing:border-box; background:url(../images/check_off.png); background-size:cover; transition:all 150ms ease-in-out 0s;}
 .checkbox.checked:before{background-image: url(../images/check_on.png);}
@@ -80,13 +80,13 @@
 .tbl-list td{padding: 9px 5px;background:#fff;border-left:1px solid #e5e5e5;border-bottom:1px solid #e5e5e5;text-align:center;font-size:9px;vertical-align: middle;word-break: keep-all;}
 .tbl-list thead tr:last-child th{border-bottom:none;}
 .tbl-list tbody tr:first-child th,
-.tbl-list tbody tr:first-child td{border-top:1px solid #a3a3a3;}
+.tbl-list tbody tr:first-child td{border-top:1px solid rgba(163, 163, 163, .6);}
 .tbl-list tbody tr:last-child th,
-.tbl-list tbody tr:last-child td {border-bottom:1px solid #a3a3a3;}
+.tbl-list tbody tr:last-child td {border-bottom:1px solid #cdccd1;}
 .tbl-list tfoot tr:last-child td,
 .tbl-list tfoot tr:last-child th{border-bottom:1px solid #cdccd1;}
 .tbl-list.type-2 th,
-.tbl-list.type-2 td{padding: 4px 5px;}
+.tbl-list.type-2 td{padding: 4px 5px; height:24px;}
 
 /* agent */
 [data-accordion-anchor]:before{position:absolute;top:50%;right:16px;content:"";display:block;width:10px;height:6px;background: url(../images/icon_arrow_bottom.png) no-repeat;background-size: cover;transform: translate(0, -50%);}
@@ -98,12 +98,13 @@
 .agent-list li > button:after{content:""; display:block; width:1px; background:#b5b5b8;}
 .agent-list li > button[data-accordion-anchor=active]{border: none;}
 .agent-list li > button[data-accordion-anchor=active]:after{display: none;}
+.agent-list .inner-box:after{content:""; display:block; width:1px; background:#b5b5b8;}
 .agent-list .date{display:block; font-size:8px;line-height:1.2;}
 .agent-list .title{display:block; font-size:13px; color:#222; font-weight:800; line-height:1.2;}
 .agent-list .connect{position:absolute;top:50%;right:38px;display:block;width:30px;height:20px;line-height:20px;border-radius: 15px;background:#666666;color:#fff;font-size:8px;text-align: center;transform: translate(0, -50%);}
 .agent-list .connect.on{background:#62c262;}
 .agent-list .inner-box{display:none;}
-.agent-list li > button[data-accordion-anchor=active] + .inner-box{display:block;padding-bottom: 10px;border-bottom: 1px solid #cdccd1;}
+.agent-list li > button[data-accordion-anchor=active] + .inner-box{display:block;padding-bottom: 10px;border-bottom: 2px solid #cac9cd;}
 .flex-title{display:flex; justify-content: space-between; align-items: center;}
 .btn-plus,
 .btn-del{position:relative; display:inline-block; width:20px; height:20px;}
